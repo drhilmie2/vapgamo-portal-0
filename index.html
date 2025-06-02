@@ -21,10 +21,17 @@
       background-repeat: no-repeat;
       color: white;
       text-align: center;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px;
     }
     /* Semi-transparent overlay to ensure text remains legible */
     .overlay {
@@ -87,11 +94,14 @@
     .footer-bottom {
       margin-bottom: 40px;
       font-size: 0.9rem;
-      color: #ddd;
+      color: black; /* Changed to black */
     }
   </style>
 </head>
 <body>
+  <!-- Logo in top-right corner -->
+  <img src="VapGmo.png" alt="VaPGaMo Logo" class="logo" />
+
   <!-- Overlay to darken the background for readability -->
   <div class="overlay">
     <div class="content-box">
