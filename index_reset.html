@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaPGaMo Download Portal</title>
+  <style>
+    /* Ensure no scrollbars appear and background always covers */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      /* Use your full background image here */
+      background-image: url('BGvap.png');
+      background-size: cover;           /* Always fill viewport */
+      background-position: center;      /* Center the image */
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* Semi-transparent overlay to ensure text remains legible */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;  /* push content down from top */
+      box-sizing: border-box;
+    }
+
+    /* Main instruction box around the button */
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    /* Download button styling */
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00aaff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    a.button:hover {
+      background-color: #008fcc;
+    }
+
+    /* Section containers for instructions and access */
+    .section {
+      max-width: 640px;
+      width: 90%;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      color: white;
+    }
+    .section h3 {
+      margin-bottom: 15px;
+    }
+    .section ul {
+      text-align: left;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+
+    /* Footer contact text */
+    .contact {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Overlay to darken the background for readability -->
+  <div class="overlay">
+    <div class="content-box">
+      <p>This portal allows selected students to download the official VaPGaMo offline game. Please do not share this link or content without permission.</p>
+      <a class="button" href="https://github.com/drhilmie2/vapgamoP2/raw/main/Vapgamo_V1(2).zip" download>⬇️ Download Game</a>
+    </div>
+
+    <div class="section">
+      <h3>🕹️ Game Instructions</h3>
+      <ul>
+        <li>Download and unzip the game file.</li>
+        <li>Double-click the <strong>VaPGaMo.exe</strong> file to launch the game.</li>
+        <li>No internet connection is required.</li>
+        <li>The game will open in full-screen mode.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>🔒 Access Password</h3>
+      <p>This game is only accessible to students with a valid password.</p>
+      <p><strong>Password:</strong> <em>To be provided by your teacher</em></p>
+    </div>
+
+    <p class="contact">Contact <strong>drhilmie@gmail.com</strong> for support.</p>
+  </div>
+</body>
+</html>
